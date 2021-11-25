@@ -16,3 +16,5 @@ Content.init({
 (async () => {
     await UserModel.sync({force: true});
 })
+
+module.exports = Content;

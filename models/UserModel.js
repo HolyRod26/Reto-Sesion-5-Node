@@ -15,14 +15,15 @@ User.init({
 
 // si en verdad se puede hacer esa extension para crear los autores
 
+/* 
 class Author extends User {}
 Author.init({
     id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
     publications: [{ type: DataTypes.TEXT }],
 })
-
+*/
 (async () => {
     await UserModel.sync({force: true});
 })
 
-module.exports = {User, Author};
+module.exports = User;
